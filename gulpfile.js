@@ -21,8 +21,6 @@ gulp.task("generate-service-worker", () => {
         modifyUrlPrefix: {
             "": "/"
         },
-        importWorkboxFrom: "disabled",
-        importScripts: ['https://cdn.jsdelivr.net/npm/workbox-sw@latest/build/workbox-sw.min.js'],
         cleanupOutdatedCaches: true,
         clientsClaim: true,
         skipWaiting: true,
