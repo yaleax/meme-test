@@ -439,7 +439,7 @@ disqusShortname = "reuixiy"
 
 enableGoogleAnalytics = true
 # `gtag` or `analytics`
-trackingCodeType = "gtag"
+trackingCodeType = "analytics"
 trackingID = "UA-100434861-1"
 
 googleSiteVerification = "vnPz24al4tgxIoA_ZYDXvbtoihzMlix_geCj7mDRimg"
