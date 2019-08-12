@@ -389,7 +389,7 @@ includeContent = true
 
 # Dark Mode
 enableDarkMode = true
-defaultTheme = "dark"
+defaultTheme = "light"
 # Note: If false and enableDarkMode equal to `true`,
 # users can still get Dark Mode if their device’s system
 # has enabled Dark Mode (`prefers-color-scheme: dark`).
