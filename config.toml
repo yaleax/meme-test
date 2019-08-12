@@ -436,14 +436,14 @@ disqusShortname = "reuixiy"
 
 enableGoogleAnalytics = true
 # `gtag` or `analytics`
-trackingCodeType = "analytics"
-trackingID = "UA-100434861-1"
+trackingCodeType = "gtag"
+trackingID = "UA-145421897-1"
 
-googleSiteVerification = "vnPz24al4tgxIoA_ZYDXvbtoihzMlix_geCj7mDRimg"
+googleSiteVerification = ""
 
 # https://developers.facebook.com/apps/
 # Used for Open Graph
-facebookAppID = "436759587050321"
+facebookAppID = ""
 
 # Post
 
