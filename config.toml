@@ -201,7 +201,6 @@ identifier = "about"
 
 [[menu.home]]
 url = "/life/"
-name = "life"
 weight = 1
 pre = "internal"
 post = "grav"
@@ -209,7 +208,6 @@ identifier = "life"
 
 [[menu.home]]
 url = "/tech/"
-name = "tech"
 weight = 2
 pre = "internal"
 post = "wpexplorer"
@@ -217,7 +215,6 @@ identifier = "tech"
 
 [[menu.home]]
 url = "/about/"
-name = "about"
 weight = 3
 pre = "internal"
 post = "user-circle"
