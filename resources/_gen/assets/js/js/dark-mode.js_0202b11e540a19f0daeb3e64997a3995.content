@@ -1,4 +1,9 @@
-// Note: Original code from https://derekkedziora.com/blog/dark-modeconst userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
+// Note: Original code from https://derekkedziora.com/blog/dark-mode
+
+
+
+
+const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
 
 if (theme === "dark") {
     document.getElementById("theme-toggle").innerHTML = "🌙";
