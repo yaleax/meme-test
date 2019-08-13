@@ -609,6 +609,11 @@ enableAboutPageMinimalFooter = true
 enablePostNav = true
 postNavInSection = false
 
+# Back to Top
+enableBackToTop = true
+backToTopIcon = "arrow-up"
+displayBackToTopInHome = true
+
 # footer
 # Note: Home layout `poetry` and `footage`, and 404 page have no footer.
 enableFooter = true
