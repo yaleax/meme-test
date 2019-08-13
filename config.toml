@@ -609,6 +609,9 @@ enableAboutPageMinimalFooter = true
 enablePostNav = true
 postNavInSection = false
 
+# Syntax Highlight
+enableHighlight = true
+
 # Back to Top
 enableBackToTop = true
 backToTopIcon = "arrow-up"
