@@ -504,7 +504,8 @@ enableCaption = true
 captionPrefix = "◎ "
 
 # Image / Video Hosting
-# Only support relative URLs relative to root: /.../*.jpg
+# Only support absolute URLs relative to root,
+# eg: /../../*.jpg
 enableHost = false
 hostURL = "https://io-oi.me/"
 headAlso = false
