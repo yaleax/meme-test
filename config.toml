@@ -412,7 +412,7 @@ darkImage = true
 themeColor = "#fff"
 themeColorDark = "#000"
 safariMaskColor = "#2a6df4"
-msApplicationTileColor = "#2a6df4"
+msApplicationTileColor = "#fff"
 
 # Head Meta, SEO & Social Discovery
 # Note that you must set openGraph to `true` if you set twitterCards to `true`,
