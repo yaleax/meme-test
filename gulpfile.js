@@ -52,10 +52,10 @@ gulp.task("generate-service-worker", () => {
                 },
             },
             {
-                urlPattern: /\.(?:mp3|wav)$/,
+                urlPattern: /\.(?:mp3|wav|mp4|webm|ogg)$/,
                 handler: "cacheFirst",
                 options: {
-                    cacheName: "audio",
+                    cacheName: "media",
                     expiration: {
                         maxEntries: 1000,
                         maxAgeSeconds: 60 * 60 * 24 * 365,
@@ -63,10 +63,10 @@ gulp.task("generate-service-worker", () => {
                 },
             },
             {
-                urlPattern: /\.(?:mp4|webm|ogg)$/,
+                urlPattern: /\.(?:json)$/,
                 handler: "cacheFirst",
                 options: {
-                    cacheName: "videos",
+                    cacheName: "json",
                     expiration: {
                         maxEntries: 1000,
                         maxAgeSeconds: 60 * 60 * 24 * 365,
