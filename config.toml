@@ -411,8 +411,8 @@ darkImage = true
 # Check and Modify manifest.json (/icons path)
 themeColor = "#fff"
 themeColorDark = "#000"
-safariMaskColor = "#5bbad5"
-msApplicationTileColor = "#00aba9"
+safariMaskColor = "#2a6df4"
+msApplicationTileColor = "#2a6df4"
 
 # Head Meta, SEO & Social Discovery
 # Note that you must set openGraph to `true` if you set twitterCards to `true`,
