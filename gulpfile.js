@@ -2,6 +2,8 @@ const gulp = require("gulp");
 const clean = require("gulp-clean");
 const shell = require("gulp-shell");
 const workbox = require("workbox-build");
+const uglify = require("gulp-uglify");
+const pipeline = require('readable-stream').pipeline;
 
 gulp.task("clean", function () {
     return gulp.src("public", { read: false, allowEmpty: true })
@@ -12,10 +14,10 @@ gulp.task("hugo-build", shell.task(["hugo --gc --minify"]));
 
 gulp.task("generate-service-worker", () => {
     return workbox.generateSW({
-        cacheId: "thepolyglotdeveloper",
+        cacheId: "hugo-theme-meme",
         globDirectory: "./public",
         globPatterns: [
-            "**/*.{css,js,eot,ttf,woff,woff2,otf}"
+            "**/*.{html,css,js,woff2}"
         ],
         swDest: "./public/sw.js",
         modifyUrlPrefix: {
@@ -30,7 +32,7 @@ gulp.task("generate-service-worker", () => {
         runtimeCaching: [
             {
                 urlPattern: /(?:\/)$/,
-                handler: "staleWhileRevalidate",
+                handler: "cacheFirst",
                 options: {
                     cacheName: "html",
                     expiration: {
@@ -50,7 +52,7 @@ gulp.task("generate-service-worker", () => {
                 },
             },
             {
-                urlPattern: /\.(?:mp3|wav|m4a)$/,
+                urlPattern: /\.(?:mp3|wav)$/,
                 handler: "cacheFirst",
                 options: {
                     cacheName: "audio",
@@ -61,7 +63,7 @@ gulp.task("generate-service-worker", () => {
                 },
             },
             {
-                urlPattern: /\.(?:m4v|mpg|avi)$/,
+                urlPattern: /\.(?:mp4|webm|ogg)$/,
                 handler: "cacheFirst",
                 options: {
                     cacheName: "videos",
@@ -75,4 +77,12 @@ gulp.task("generate-service-worker", () => {
     });
 });
 
-gulp.task("build", gulp.series("clean", "hugo-build", "generate-service-worker"));
+gulp.task("uglify", function () {
+    return pipeline(
+        gulp.src("./public/sw.js"),
+        uglify(),
+        gulp.dest("./public")
+  );
+});
+
+gulp.task("build", gulp.series("clean", "hugo-build", "generate-service-worker", "uglify"));
