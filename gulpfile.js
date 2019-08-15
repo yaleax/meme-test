@@ -33,7 +33,7 @@ gulp.task("generate-service-worker", () => {
         },
         runtimeCaching: [
             {
-                urlPattern: /\.(?:html)$/,
+                urlPattern: /(?:\/)$/,
                 handler: "cacheFirst",
                 options: {
                     cacheName: "html",
