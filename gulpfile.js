@@ -2,7 +2,9 @@ const gulp = require("gulp");
 const clean = require("gulp-clean");
 const shell = require("gulp-shell");
 const workbox = require("workbox-build");
-const uglify = require("gulp-uglify");
+const uglifyes = require('uglify-es');
+const composer = require('gulp-uglify/composer');
+const uglify = composer(uglifyes, console);
 const pipeline = require('readable-stream').pipeline;
 
 gulp.task("clean", function () {
@@ -78,7 +80,7 @@ gulp.task("generate-service-worker", () => {
                 urlPattern: new RegExp('^https:\/\/fonts\.googleapis\.com'),
                 handler: "staleWhileRevalidate",
                 options: {
-                    cacheName: "google-fonts-stylesheets",
+                    cacheName: "google-fonts-stylesheets"
                 }
             },
             {

@@ -24,6 +24,7 @@
     "gulp-shell": "^0.7.1",
     "gulp-uglify": "^3.0.2",
     "readable-stream": "^3.4.0",
+    "uglify-es": "^3.3.9",
     "workbox-build": "^4.3.1"
   }
 }
