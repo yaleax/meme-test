@@ -18,6 +18,8 @@ gulp.task("generate-service-worker", () => {
     return workbox.generateSW({
         cacheId: "hugo-theme-meme",
         swDest: "./public/sw.js",
+        clientsClaim: true,
+        skipWaiting: true,
         ignoreUrlParametersMatching: [/./],
         offlineGoogleAnalytics: true,
         cleanupOutdatedCaches: true,
