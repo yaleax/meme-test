@@ -1,10 +1,12 @@
-workbox.precaching.addPlugins([new workbox.broadcastUpdate.Plugin('update')]);
+workbox.precaching.addPlugins([
+    new workbox.broadcastUpdate.Plugin({
+      channelName: 'precache-updates'
+    })
+  ]);
 
-const updatesChannel = new BroadcastChannel('update');
+const updatesChannel = new BroadcastChannel('precache-updates');
 updatesChannel.addEventListener('message', event => {
    
-        const url = event.data.payload.updatedURL;
-        if (url === location.href) {
             let a = document.querySelector('meta[name=theme-color]')
     , b = document.createElement('div');
   a && (a.content = '#000'),
@@ -14,6 +16,5 @@ updatesChannel.addEventListener('message', event => {
       document.getElementById('app-refresh').className += ' app-refresh-show'
   }, 16)
   console.log("log")
-        }
   
 });
