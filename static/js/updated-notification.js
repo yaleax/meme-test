@@ -6,27 +6,18 @@ workbox.precaching.addPlugins([
 
 const updatesChannel = new BroadcastChannel('precache-updates');
 
-updatesChannel.addEventListener('message', event => {
-    if (event.data) {
-        appRefresh ({
-            text: 'Page update available.',
-            action: 'Refresh',
-            callback: () => location.reload()
-        })
-    }
-    if (!event.data) {
-        appRefresh ({
-            text: 'Page update available.',
-            action: 'Refresh',
-            callback: () => location.reload()
-        })
-    }
+const a = document.querySelector('meta[name=theme-color]');
+const b = document.createElement('div');
+
+updatesChannel.addEventListener('message', () => {
+    appRefresh ({
+        text: 'Page update available.',
+        action: 'Refresh',
+        callback: () => location.reload()
+    })
 });
 
 async function appRefresh({text, action, callback}={}) {
-    const a = document.querySelector('meta[name=theme-color]');
-    const b = document.createElement('div');
-
     a && (a.content = '#000'),
     b.innerHTML = `
         <style>
