@@ -5,9 +5,16 @@ workbox.precaching.addPlugins([
 ]);
 
 const updatesChannel = new BroadcastChannel('precache-updates');
-const document = document
 
-updatesChannel.addEventListener('message', event => {
+updatesChannel.addEventListener('message', () => {
+    appRefresh ({
+        text: 'Page update available.',
+        action: 'Refresh',
+        callback: () => location.reload()
+    })
+});
+
+async function appRefresh({text, action, callback}={}) {
     const a = document.querySelector('meta[name=theme-color]');
     const b = document.createElement('div');
 
@@ -17,4 +24,4 @@ updatesChannel.addEventListener('message', event => {
     setTimeout(function() {
         document.getElementById('app-refresh').className += ' app-refresh-show'
     }, 16)
-});
+}
