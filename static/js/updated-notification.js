@@ -6,8 +6,8 @@ workbox.precaching.addPlugins([
 
 const updatesChannel = new BroadcastChannel('precache-updates');
 
-updatesChannel.addEventListener('message', event => {
-    appRefresh ({
+updatesChannel.addEventListener('message', () => {
+    this.appRefresh ({
         text: 'Page update available.',
         action: 'Refresh',
         callback: () => location.reload()
