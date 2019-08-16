@@ -1,7 +1,1 @@
-workbox.precaching({
-    plugins: [
-        new workbox.broadcastUpdate.Plugin({
-            channelName: 'sw.update'
-        })
-    ]
-})
+workbox.precaching.addPlugins([new workbox.broadcastUpdate.Plugin('sw.update')]);
