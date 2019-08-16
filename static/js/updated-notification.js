@@ -4,7 +4,6 @@ workbox.precaching.addPlugins([
     })
 ]);
 
-if ('serviceWorker' in navigator) {
     const channel = new BroadcastChannel('page-updated');
     channel.addEventListener('message', () => {
             displaySnackbar({
@@ -13,7 +12,6 @@ if ('serviceWorker' in navigator) {
                 callback: () => location.reload()
             });
     });
-}
 
 async function displaySnackbar({text, action, callback}={}) {
     document.head.insertAdjacentHTML('beforeend',
