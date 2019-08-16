@@ -107,8 +107,7 @@ gulp.task("generate-service-worker", () => {
                     }
                 }
             }
-        ],
-        importScripts: ['/js/updated-notification.js']
+        ]
     });
 });
 
