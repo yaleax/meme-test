@@ -1,6 +1,6 @@
-workbox.precaching.addPlugins([new workbox.broadcastUpdate.Plugin('sw.update')]);
+workbox.precaching.addPlugins([new workbox.broadcastUpdate.Plugin('update')]);
 
-const updatesChannel = new BroadcastChannel('sw.update');
+const updatesChannel = new BroadcastChannel('update');
 updatesChannel.addEventListener('message', event => {
         if (event.data) {
              let a = document.querySelector('meta[name=theme-color]')
