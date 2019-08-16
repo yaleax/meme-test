@@ -6,15 +6,12 @@ workbox.precaching.addPlugins([
 
 if ('serviceWorker' in navigator) {
     const channel = new BroadcastChannel('page-updated');
-    channel.addEventListener('message', event => {
-        const url = event.data.payload.updatedURL;
-        if (url === location.href) {
+    channel.addEventListener('message', () => {
             displaySnackbar({
                 text: 'Page update available.',
                 action: 'Refresh',
                 callback: () => location.reload()
             });
-        }
     });
 }
 
