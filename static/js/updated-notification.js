@@ -13,3 +13,4 @@ updatesChannel.addEventListener('message', () => {
         callback: () => location.reload()
     })
 });
+
