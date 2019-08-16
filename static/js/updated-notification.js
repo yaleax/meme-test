@@ -1,6 +1,6 @@
-workbox.precaching.addPlugins([new workbox.broadcastUpdate.Plugin('sw.update')]);
+workbox.precaching.addPlugins([new workbox.broadcastUpdate.Plugin('update')]);
 
-const updatesChannel = new BroadcastChannel('sw.update');
+const updatesChannel = new BroadcastChannel('update');
 updatesChannel.addEventListener('message', async (event) => {
     const url = event.data.payload.updatedURL;
         if (url === location.href) {
