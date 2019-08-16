@@ -26,8 +26,8 @@ gulp.task("generate-service-worker", () => {
         globDirectory: "./public",
         globPatterns: [
             "**/*.{css,js,json,woff2}",
-            // "life/**/*",
-            // "tech/**/*"
+            "life/**/*",
+            "tech/**/*"
         ],
         maximumFileSizeToCacheInBytes: 50 * 1024 * 1024,
         modifyUrlPrefix: {
@@ -120,4 +120,4 @@ gulp.task("uglify", function () {
   );
 });
 
-gulp.task("build", gulp.series("clean", "hugo-build", "generate-service-worker"));
+gulp.task("build", gulp.series("clean", "hugo-build", "generate-service-worker", "uglify"));
