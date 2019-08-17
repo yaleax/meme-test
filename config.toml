@@ -305,7 +305,7 @@ siteBrandFontColor = "#fff"
 siteBrandBackgroundImage = "linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%)"
 
 # poetry, footage, posts
-homeLayout = "poetry"
+homeLayout = "posts"
 # Layout poetry settings
 # Markdown supported
 homePoetry = ["暗夜中", "渴望一束光的关怀", "在白天", "却更渴望黑洞的吞噬", "因为好奇心，想看看黑暗中有什么"]
