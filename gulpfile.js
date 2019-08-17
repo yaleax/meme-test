@@ -27,8 +27,7 @@ gulp.task("generate-service-worker", () => {
         globPatterns: [
             "**/*.{css,js,json,woff2}",
             "life/**/*",
-            "tech/**/*",
-            "offline/*"
+            "tech/**/*"
         ],
         maximumFileSizeToCacheInBytes: 50 * 1024 * 1024,
         modifyUrlPrefix: {
@@ -108,8 +107,7 @@ gulp.task("generate-service-worker", () => {
                     }
                 }
             }
-        ],
-        importScripts: ['offline.js']
+        ]
     });
 });
 
