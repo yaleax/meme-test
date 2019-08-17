@@ -27,7 +27,8 @@ gulp.task("generate-service-worker", () => {
         globPatterns: [
             "**/*.{css,js,json,woff2}",
             "life/**/*",
-            "tech/**/*"
+            "tech/**/*",
+            "offline/*"
         ],
         maximumFileSizeToCacheInBytes: 50 * 1024 * 1024,
         modifyUrlPrefix: {
