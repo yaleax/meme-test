@@ -33,32 +33,10 @@ gulp.task("generate-service-worker", () => {
         },
         runtimeCaching: [
             {
-                urlPattern: /(?:\/)$/,
-                handler: "cacheFirst",
-                options: {
-                    cacheName: "html",
-                    expiration: {
-                        maxEntries: 1000,
-                        maxAgeSeconds: 60 * 60 * 24 * 7
-                    }
-                }
-            },
-            {
                 urlPattern: /\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/,
                 handler: "cacheFirst",
                 options: {
                     cacheName: "image",
-                    expiration: {
-                        maxEntries: 1000,
-                        maxAgeSeconds: 60 * 60 * 24 * 365
-                    }
-                }
-            },
-            {
-                urlPattern: /\.(?:mp3|wav|mp4|webm|ogg)$/,
-                handler: "cacheFirst",
-                options: {
-                    cacheName: "media",
                     expiration: {
                         maxEntries: 1000,
                         maxAgeSeconds: 60 * 60 * 24 * 365

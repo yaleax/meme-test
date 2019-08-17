@@ -50,7 +50,7 @@ lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
 smartypants = false
 fractions = false
 hrefTargetBlank = true
-extensionsmask = ["hardLineBreak","backslashLineBreak"]
+extensionsmask = ["hardLineBreak", "backslashLineBreak"]
 
 [languages.zh-cn]
 languageName = "中文"
@@ -514,7 +514,7 @@ headAlso = false
 squareBrackets = true
 # If true, will replace `footnoteReturnLinkContents` with icon.
 footnoteReturnLinkIcon = "angle-up"
-# If true, the automatically added `<hr>` will be deleted.
+# If true, the automatically added `<hr />` will be deleted.
 # (In fact, the separator you added will be removed. This
 # will be very useful if you prefer to add `---` to separate
 # the content from the footnote in the Markdown file.)
@@ -534,7 +534,7 @@ lineHeight = 2
 # Any value is not set, fallback to `fontFamilyBody` it will.
 # If you use SVG as your Site Brand, then leave this value empty.
 fontFamilySiteBrand = ""
-fontFamilyPostTitle = ""
+fontFamilyTitle = ""
 fontFamilyHeadings = ""
 fontFamilyCode = "'Source Code Pro', 'Noto Serif SC', monospace"
 fontFamilyQuote = ""
