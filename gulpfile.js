@@ -25,9 +25,7 @@ gulp.task("generate-service-worker", () => {
         cleanupOutdatedCaches: true,
         globDirectory: "./public",
         globPatterns: [
-            "**/*.{css,js,json,woff2}",
-            "life/**/*",
-            "tech/**/*"
+            "**/*.{html,css,js,json,woff2}",
         ],
         maximumFileSizeToCacheInBytes: 50 * 1024 * 1024,
         modifyUrlPrefix: {
@@ -36,7 +34,7 @@ gulp.task("generate-service-worker", () => {
         runtimeCaching: [
             {
                 urlPattern: /(?:\/)$/,
-                handler: "staleWhileRevalidate",
+                handler: "cacheFirst",
                 options: {
                     cacheName: "html",
                     expiration: {
