@@ -108,7 +108,8 @@ gulp.task("generate-service-worker", () => {
                     }
                 }
             }
-        ]
+        ],
+        importScripts: ['offline.js']
     });
 });
 
