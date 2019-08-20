@@ -565,6 +565,7 @@ enableJustify = true
 
 # Post Copyright
 enablePostCopyright = true
+displayPostCopyright = true
 
 enablePostUpdatedBadge = true
 displayUpdatedBadge = true
