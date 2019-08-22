@@ -2,7 +2,7 @@ baseURL = "https://meme-test.netlify.com/"
 theme = "meme"
 # https://en.wikipedia.org/wiki/Language_localisation
 # https://www.zhihu.com/question/21980689
-defaultContentLanguage = "zh-cn"
+defaultContentLanguage = "en-us"
 
 defaultContentLanguageInSubdir = false
 
