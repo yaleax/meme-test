@@ -59,9 +59,10 @@ weight = 1
 languageCode = "zh-CN"
 hasCJKLanguage= true
 title = "Hugo 主题 MemE"
-copyright = "[Some rights reserved.](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)"
+copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)"
 [languages.zh-cn.params]
 lineHeight = 2
+enableSmallCap = false
 
 [languages.en-us]
 languageName = "English"
@@ -69,10 +70,96 @@ contentDir = "content/en"
 weight = 2
 languageCode = "en-US"
 title = "Hugo Theme MemE"
-copyright = "Copyright (c) reuixiy"
+copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
+[[languages.en-us.menu.main]]
+url = "/en-us/home/"
+name = "Home"
+weight = 1
+pre = "internal"
+post = "home"
+identifier = "home"
+[[languages.en-us.menu.main]]
+url = "/en-us/archives/"
+name = "Archives"
+weight = 2
+pre = "internal"
+post = "archive"
+identifier = "archives"
+[[languages.en-us.menu.main]]
+url = "/en-us/posts/"
+name = "Posts"
+weight = 3
+pre = "internal"
+post = "wpexplorer"
+identifier = "posts"
+[[languages.en-us.menu.main]]
+url = "/en-us/poetry/"
+name = "Poetry"
+weight = 4
+pre = "internal"
+post = "grav"
+identifier = "poetry"
+[[languages.en-us.menu.main]]
+url = "/en-us/categories/"
+name = "Categories"
+weight = 5
+pre = "internal"
+post = "th"
+identifier = "categories"
+[[languages.en-us.menu.main]]
+url = "/en-us/tags/"
+name = "Tags"
+weight = 6
+pre = "internal"
+post = "tags"
+identifier = "tags"
+[[languages.en-us.menu.main]]
+url = "/en-us/about/"
+name = "About"
+weight = 7
+pre = "internal"
+post = "user-circle"
+identifier = "about"
+[[languages.en-us.menu.socials]]
+url = "https://github.com/reuixiy"
+name = "GitHub"
+weight = 1
+pre = "external"
+identifier = "github"
+[[languages.en-us.menu.socials]]
+url = "https://twitter.com/reuixiy"
+name = "Twitter"
+weight = 2
+pre = "external"
+identifier = "twitter"
+[[languages.en-us.menu.socials]]
+url = "https://music.163.com/user/home?id=86590096"
+name = "Music"
+weight = 3
+pre = "external"
+identifier = "music"
+[[languages.en-us.menu.links]]
+url = "/en-us/"
+name = "HOME"
+weight = 1
+pre = "internal"
+identifier = "home"
+[[languages.en-us.menu.links]]
+url = "/en-us/series/"
+name = "Series"
+weight = 2
+pre = "internal"
+identifier = "series"
+[[languages.en-us.menu.links]]
+url = "/en-us/atom.xml"
+name = "Feed"
+weight = 3
+pre = "external"
+identifier = "feed"
 [languages.en-us.params]
+fontSize = 18
 lineHeight = 1.618
-postWidth = 28
+postWidth = 32
 enableJustify = false
 enableChinesePunctuationGlyphCorrection = false
 
@@ -83,11 +170,12 @@ enableChinesePunctuationGlyphCorrection = false
 # tech = "/:sections/:slug/"
 categories = "/categories/:slug/"
 tags = "/tags/:slug/"
+series = "/series/:slug/"
 
 [taxonomies]
 category = "categories"
 tag = "tags"
-name = "names"
+series = "series"
 
 [mediaTypes."application/atom+xml"]
 suffixes = ["xml"]
@@ -159,24 +247,24 @@ post = "archive"
 identifier = "archives"
 
 [[menu.main]]
-url = "/life/"
-name = "生活"
+url = "/posts/"
+name = "文章"
 weight = 3
 pre = "internal"
-post = "grav"
-identifier = "life"
+post = "wpexplorer"
+identifier = "posts"
 
 [[menu.main]]
-url = "/tech/"
-name = "技术"
+url = "/poetry/"
+name = "诗作"
 weight = 4
 pre = "internal"
-post = "wpexplorer"
-identifier = "tech"
+post = "grav"
+identifier = "poetry"
 
 [[menu.main]]
 url = "/categories/"
-name = "categories"
+name = "分类"
 weight = 5
 pre = "internal"
 post = "th"
@@ -184,7 +272,7 @@ identifier = "categories"
 
 [[menu.main]]
 url = "/tags/"
-name = "tags"
+name = "标签"
 weight = 6
 pre = "internal"
 post = "tags"
@@ -192,32 +280,32 @@ identifier = "tags"
 
 [[menu.main]]
 url = "/about/"
-name = "about"
+name = "关于"
 weight = 7
 pre = "internal"
 post = "user-circle"
 identifier = "about"
 
-[[menu.home]]
-url = "/life/"
-weight = 1
-pre = "internal"
-post = "grav"
-identifier = "life"
+# [[menu.home]]
+# url = "/life/"
+# weight = 1
+# pre = "internal"
+# post = "grav"
+# identifier = "life"
 
-[[menu.home]]
-url = "/tech/"
-weight = 2
-pre = "internal"
-post = "wpexplorer"
-identifier = "tech"
+# [[menu.home]]
+# url = "/tech/"
+# weight = 2
+# pre = "internal"
+# post = "wpexplorer"
+# identifier = "tech"
 
-[[menu.home]]
-url = "/about/"
-weight = 3
-pre = "internal"
-post = "user-circle"
-identifier = "about"
+# [[menu.home]]
+# url = "/about/"
+# weight = 3
+# pre = "internal"
+# post = "user-circle"
+# identifier = "about"
 
 # [[menu.home]]
 # url = "/life/"
@@ -269,11 +357,11 @@ pre = "internal"
 identifier = "home"
 
 [[menu.links]]
-url = "/coldplay/"
-name = "Coldplay"
+url = "/series/"
+name = "专题"
 weight = 2
 pre = "internal"
-identifier = "coldplay"
+identifier = "series"
 
 [[menu.links]]
 url = "/atom.xml"
@@ -308,29 +396,29 @@ siteBrandBackgroundImage = "linear-gradient(90deg, #f79533 0, #f37055 15%, #ef4e
 homeLayout = "posts"
 # Layout poetry settings
 # Markdown supported
-homePoetry = ["暗夜中", "渴望一束光的关怀", "在白天", "却更渴望黑洞的吞噬", "因为好奇心，想看看黑暗中有什么"]
+homePoetry = []
 # Unit: em
 homeLinksPadding = 1
 # Layout footage settings
-homePoster = "/images/reflection-of-tree-at-night-10s-720p.jpg"
-homeVideoWebm = "/videos/reflection-of-tree-at-night-10s-720p.webm"
-homeVideoMp4 = "/videos/reflection-of-tree-at-night-10s-720p.mp4"
-homeLogo = "/icons/android-chrome-512x512.png"
-homeLogoLink = "/life/"
-homeTitle = "一休儿的哲学博客"
-homeMotto = "易·象·辞"
-homeDescription = "一个关于哲学的博客，目标是构建一个宏大的体系"
-homeKeywords = "关键词：真理、形而上学、哲学、物理、诗歌、酒神、尼采、《查拉图斯特拉如是说》、神话、未来、科幻、赛博朋克、反乌托邦、去中心化、开源、太空"
-homeLinksDelimiter = "·"
+homePoster = ""
+homeVideoWebm = ""
+homeVideoMp4 = ""
+homeLogo = ""
+homeLogoLink = ""
+homeTitle = ""
+homeMotto = ""
+homeDescription = ""
+homeKeywords = ""
+homeLinksDelimiter = ""
 
 # URL, For JSON-LD, Twitter Cards, Open Graph
 siteLogo = "/icons/apple-touch-icon.png"
 # For HTML meta
-siteDescription = "这是 reuixiy 的生活与技术博客！怎么记住 reuixiy 呢？其实就是「一休儿」的拼音，只不过顺序是从右往左……"
+siteDescription = "MemE is a powerful GoHugo theme."
 # If not set, will use site all taxonomies term as default
 siteKeywords = []
 # Keep this format, change the number
-siteCreatedTime = "2017-05-27T15:13:14+08:00"
+siteCreatedTime = "1969-07-20T20:17:43+00:00"
 # If you enable `twitterCards`, then add your Twitter username
 siteTwitter = "reuixiy"
 # If you enable `openGraph`, then add your Facebook username
@@ -370,13 +458,13 @@ i18nMonth = true
 displayTaxonomyTermCount = true
 
 # Overwrite Hugo’s default value
-mainSections = ["life", "tech"]
+mainSections = ["posts"]
 
 # Post Sections
-postSections = ["life", "tech", "poetry"]
+postSections = ["posts", "poetry"]
 
 # Feed
-feedSections = ["life", "tech"]
+feedSections = ["posts"]
 # If `true`, will add content to Atom; If `false`, won’t.
 # Note: By default, will add summary to Atom as `summary`,
 # and if Front Matter have a description, description
@@ -461,11 +549,14 @@ postWidth = 36
 # If one post is not original, set in that post’s Front Matter.
 original = true
 
+# Post Description
+displayPostDescription = true
+
 # Post Meta
 enablePostMeta = true
 # Works for home layout `posts` only
 enablePostMetaInHome = true
-postMetaDateFormat = "January 2"
+postMetaDateFormat = "January 2, 2006"
 displayPublishedDate = true
 publishedDateIcon = "calendar-alt"
 displayModifiedDate = true
@@ -489,13 +580,13 @@ linkHeadingsToTOC = true
 # Headings Anchor / Section Sign (Add section sign before headings)
 enableHeadingsAnchor = true
 # RegEX format, Defaut: 1-6 (1|2|3|4|5|6), h1-h6
-headingsOpt = "2"
+headingsOpt = "1-6"
 # `anchorIcon` has a higher priority than `anchorSymbol`
 # Default: §
 anchorSymbol = "#"
 anchorIcon = "link"
 enableAnchorLink = true
-enableAnchorAutoHide = false
+enableAnchorAutoHide = true
 
 # Image / Video
 # If true, will replace `title` with caption.
@@ -534,8 +625,8 @@ lineHeight = 2
 # Any value is not set, fallback to `fontFamilyBody` it will.
 # If you use SVG as your Site Brand, then leave this value empty.
 fontFamilySiteBrand = ""
-fontFamilyTitle = ""
-fontFamilyHeadings = ""
+fontFamilyTitle = "'Cinzel Decorative', 'Noto Serif SC', serif"
+fontFamilyHeadings = "'Cinzel Decorative', 'Noto Serif SC', serif"
 fontFamilyCode = "'Source Code Pro', 'Noto Serif SC', monospace"
 fontFamilyQuote = ""
 fontFamilyTOC = ""
@@ -544,17 +635,17 @@ fontFamilyFooter = ""
 fontFamilyBody = "'EB Garamond', 'Noto Serif SC', serif"
 
 # https://fonts.google.com/
-fontsLink = 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,700,700i|Noto+Serif+SC:400,500,700|Source+Code+Pro:400,400i,700,700i&display=swap&subset=chinese-simplified'
+fontsLink = 'https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,700,700i|Noto+Serif+SC:400,500,700|Source+Code+Pro:400,400i,700,700i|Cinzel+Decorative:700&display=swap&subset=chinese-simplified'
 
 enableChinesePunctuationGlyphCorrection = true
 
-# Post title and headings
+# Post headings and contents title
 enableSmallCap = true
 
 # Post first paragraph
 enableDropCap = true
 # Every paragraph after `<hr />` or `---` in Markdown
-enableDropCapAfterHr = true
+enableDropCapAfterHr = false
 deleteHrBeforeDropCap = false
 
 enableParagraphIndent = true
@@ -615,7 +706,7 @@ enableHighlight = true
 # Back to Top
 enableBackToTop = true
 backToTopIcon = "arrow-up"
-displayBackToTopInHome = false
+displayBackToTopInHome = true
 
 # footer
 # Note: Home layout `poetry` and `footage`, and 404 page have no footer.
@@ -627,7 +718,7 @@ iconColor = "#f06292"
 iconAnimation = true
 displayPoweredBy = true
 displaySiteCopyright = true
-customFooter = "[CC-BY-NC](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)"
+customFooter = ""
 
 # Multilingual
 enableLangToggle = true

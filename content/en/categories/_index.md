@@ -1,4 +1,3 @@
----
-# outputs: ["NoUglyHTML", "NoUglyRSS"]
-outputs: ["HTML"]
----
++++
+outputs = ["HTML"]
++++

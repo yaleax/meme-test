@@ -1,5 +1,4 @@
----
-# outputs: ["NoUglyHTML", "NoUglyRSS"]
-outputs: ["HTML"]
-title: 分类
----
++++
+title = "分类"
+outputs = ["HTML"]
++++
