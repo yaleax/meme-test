@@ -52,116 +52,116 @@ fractions = false
 hrefTargetBlank = true
 extensionsmask = ["hardLineBreak", "backslashLineBreak"]
 
-[languages.zh-cn]
-languageName = "中文"
-contentDir = "content/zh"
-weight = 1
-languageCode = "zh-CN"
-hasCJKLanguage= true
-title = "Hugo 主题 MemE"
-copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)"
-[languages.zh-cn.params]
-lineHeight = 2
-enableSmallCap = false
-
 [languages.en-us]
 languageName = "English"
 contentDir = "content/en"
-weight = 2
+weight = 1
 languageCode = "en-US"
 title = "Hugo Theme MemE"
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
-[[languages.en-us.menu.main]]
-url = "/en-us/home/"
-name = "Home"
-weight = 1
-pre = "internal"
-post = "home"
-identifier = "home"
-[[languages.en-us.menu.main]]
-url = "/en-us/archives/"
-name = "Archives"
-weight = 2
-pre = "internal"
-post = "archive"
-identifier = "archives"
-[[languages.en-us.menu.main]]
-url = "/en-us/posts/"
-name = "Posts"
-weight = 3
-pre = "internal"
-post = "wpexplorer"
-identifier = "posts"
-[[languages.en-us.menu.main]]
-url = "/en-us/poetry/"
-name = "Poetry"
-weight = 4
-pre = "internal"
-post = "grav"
-identifier = "poetry"
-[[languages.en-us.menu.main]]
-url = "/en-us/categories/"
-name = "Categories"
-weight = 5
-pre = "internal"
-post = "th"
-identifier = "categories"
-[[languages.en-us.menu.main]]
-url = "/en-us/tags/"
-name = "Tags"
-weight = 6
-pre = "internal"
-post = "tags"
-identifier = "tags"
-[[languages.en-us.menu.main]]
-url = "/en-us/about/"
-name = "About"
-weight = 7
-pre = "internal"
-post = "user-circle"
-identifier = "about"
-[[languages.en-us.menu.socials]]
-url = "https://github.com/reuixiy"
-name = "GitHub"
-weight = 1
-pre = "external"
-identifier = "github"
-[[languages.en-us.menu.socials]]
-url = "https://twitter.com/reuixiy"
-name = "Twitter"
-weight = 2
-pre = "external"
-identifier = "twitter"
-[[languages.en-us.menu.socials]]
-url = "https://music.163.com/user/home?id=86590096"
-name = "Music"
-weight = 3
-pre = "external"
-identifier = "music"
-[[languages.en-us.menu.links]]
-url = "/en-us/"
-name = "HOME"
-weight = 1
-pre = "internal"
-identifier = "home"
-[[languages.en-us.menu.links]]
-url = "/en-us/series/"
-name = "Series"
-weight = 2
-pre = "internal"
-identifier = "series"
-[[languages.en-us.menu.links]]
-url = "/en-us/atom.xml"
-name = "Feed"
-weight = 3
-pre = "external"
-identifier = "feed"
 [languages.en-us.params]
 fontSize = 18
 lineHeight = 1.618
 postWidth = 32
 enableJustify = false
 enableChinesePunctuationGlyphCorrection = false
+
+[languages.zh-cn]
+languageName = "中文"
+contentDir = "content/zh"
+weight = 2
+languageCode = "zh-CN"
+hasCJKLanguage= true
+title = "Hugo 主题 MemE"
+copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)"
+[[languages.zh-cn.menu.main]]
+url = "/zh-cn/home/"
+name = "首页"
+weight = 1
+pre = "internal"
+post = "home"
+identifier = "home"
+[[languages.zh-cn.menu.main]]
+url = "/zh-cn/archives/"
+name = "归档"
+weight = 2
+pre = "internal"
+post = "archive"
+identifier = "archives"
+[[languages.zh-cn.menu.main]]
+url = "/zh-cn/posts/"
+name = "文章"
+weight = 3
+pre = "internal"
+post = "wpexplorer"
+identifier = "posts"
+[[languages.zh-cn.menu.main]]
+url = "/zh-cn/poetry/"
+name = "诗作"
+weight = 4
+pre = "internal"
+post = "grav"
+identifier = "poetry"
+[[languages.zh-cn.menu.main]]
+url = "/zh-cn/categories/"
+name = "分类"
+weight = 5
+pre = "internal"
+post = "th"
+identifier = "categories"
+[[languages.zh-cn.menu.main]]
+url = "/zh-cn/tags/"
+name = "标签"
+weight = 6
+pre = "internal"
+post = "tags"
+identifier = "tags"
+[[languages.zh-cn.menu.main]]
+url = "/zh-cn/about/"
+name = "关于"
+weight = 7
+pre = "internal"
+post = "user-circle"
+identifier = "about"
+[[languages.zh-cn.menu.socials]]
+url = "https://github.com/reuixiy"
+name = "GitHub"
+weight = 1
+pre = "external"
+identifier = "github"
+[[languages.zh-cn.menu.socials]]
+url = "https://twitter.com/reuixiy"
+name = "Twitter"
+weight = 2
+pre = "external"
+identifier = "twitter"
+[[languages.zh-cn.menu.socials]]
+url = "https://music.163.com/user/home?id=86590096"
+name = "Music"
+weight = 3
+pre = "external"
+identifier = "music"
+[[languages.zh-cn.menu.links]]
+url = "/zh-cn/"
+name = "HOME"
+weight = 1
+pre = "internal"
+identifier = "home"
+[[languages.zh-cn.menu.links]]
+url = "/zh-cn/series/"
+name = "系列"
+weight = 2
+pre = "internal"
+identifier = "series"
+[[languages.zh-cn.menu.links]]
+url = "/zh-cn/atom.xml"
+name = "Feed"
+weight = 3
+pre = "external"
+identifier = "feed"
+[languages.zh-cn.params]
+lineHeight = 2
+enableSmallCap = false
 
 # uglyURLs = true
 
@@ -232,7 +232,7 @@ limit = -1
 
 [[menu.main]]
 url = "/home/"
-name = "首页"
+name = "Home"
 weight = 1
 pre = "internal"
 post = "home"
@@ -240,7 +240,7 @@ identifier = "home"
 
 [[menu.main]]
 url = "/archives/"
-name = "归档"
+name = "Archives"
 weight = 2
 pre = "internal"
 post = "archive"
@@ -248,7 +248,7 @@ identifier = "archives"
 
 [[menu.main]]
 url = "/posts/"
-name = "文章"
+name = "Posts"
 weight = 3
 pre = "internal"
 post = "wpexplorer"
@@ -256,7 +256,7 @@ identifier = "posts"
 
 [[menu.main]]
 url = "/poetry/"
-name = "诗作"
+name = "Poetry"
 weight = 4
 pre = "internal"
 post = "grav"
@@ -264,7 +264,7 @@ identifier = "poetry"
 
 [[menu.main]]
 url = "/categories/"
-name = "分类"
+name = "Categories"
 weight = 5
 pre = "internal"
 post = "th"
@@ -272,7 +272,7 @@ identifier = "categories"
 
 [[menu.main]]
 url = "/tags/"
-name = "标签"
+name = "Tags"
 weight = 6
 pre = "internal"
 post = "tags"
@@ -280,7 +280,7 @@ identifier = "tags"
 
 [[menu.main]]
 url = "/about/"
-name = "关于"
+name = "About"
 weight = 7
 pre = "internal"
 post = "user-circle"
@@ -358,7 +358,7 @@ identifier = "home"
 
 [[menu.links]]
 url = "/series/"
-name = "专题"
+name = "Series"
 weight = 2
 pre = "internal"
 identifier = "series"
