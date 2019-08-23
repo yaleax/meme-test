@@ -28,9 +28,9 @@ In this example we will be using [${\KaTeX}$](https://katex.org/)
 - Within this partial reference the [Auto-render Extension](https://katex.org/docs/autorender.html) or host these scripts locally.
 - Include the partial in your templates like so:  
 
-```
+```go-html-template
 {{ if or .Params.math .Site.Params.math }}
-{{ partial "math.html" . }}
+    {{ partial "math.html" . }}
 {{ end }}
 ```
 

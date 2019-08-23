@@ -414,7 +414,7 @@ homeLinksDelimiter = ""
 # URL, For JSON-LD, Twitter Cards, Open Graph
 siteLogo = "/icons/apple-touch-icon.png"
 # For HTML meta
-siteDescription = "MemE is a powerful GoHugo theme."
+siteDescription = "MemE is a powerful and highly customizable GoHugo blog theme."
 # If not set, will use site all taxonomies term as default
 siteKeywords = []
 # Keep this format, change the number
