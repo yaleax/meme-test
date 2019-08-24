@@ -664,7 +664,7 @@ enableBadgeTitle = true
 badgeTitlePrefix = "Updated @ "
 
 enablePostGitInfo = true
-displayGitInfo = true
+displayPostGitInfo = true
 repoURL = "https://github.com/reuixiy/meme-test"
 # or https://github.com/reuixiy/meme-test/edit/master
 repoEditURL = "https://github.com/reuixiy/meme-test/blob/master"
