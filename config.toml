@@ -63,7 +63,7 @@ languageCode = "en-US"
 title = "Hugo Theme MemE"
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
 [languages.en-us.params]
-fontSize = 18
+fontSize = 20
 lineHeight = 1.618
 postWidth = 32
 enableJustify = false
