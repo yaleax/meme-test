@@ -1,7 +1,7 @@
 {
   "name": "meme-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a test site for Hugo theme MemE",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,9 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/reuixiy/meme-test.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["hugo", "hugo-theme", "hugo-theme-meme"],
+  "author": "reuixiy",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/reuixiy/meme-test/issues"
   },
