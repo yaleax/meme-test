@@ -11,4 +11,4 @@ A test site for Hugo theme [MemE](https://github.com/reuixiy/hugo-theme-meme)!
 
 ## Todo
 
-- [ ] Broadcast Cache Update
+- [x] Broadcast Cache Update
