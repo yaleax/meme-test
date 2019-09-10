@@ -38,7 +38,7 @@ workbox.routing.registerRoute(
 // Videos
 workbox.routing.registerRoute(
     /\.(?:mp4|webm|ogg)$/,
-    new workbox.strategies.CacheFirst({
+    new workbox.strategies.CacheOnly({
         cacheName: "videos",
         plugins: [
             new workbox.cacheableResponse.Plugin({
