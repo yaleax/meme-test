@@ -35,20 +35,6 @@ workbox.routing.registerRoute(
     })
 );
 
-// Videos
-workbox.routing.registerRoute(
-    /\.(?:mp4|webm|ogg)$/,
-    new workbox.strategies.CacheOnly({
-        cacheName: "videos",
-        plugins: [
-            new workbox.cacheableResponse.Plugin({
-                statuses: [200]
-            }),
-            new workbox.rangeRequests.Plugin()
-        ]
-    })
-);
-
 // Fonts
 workbox.routing.registerRoute(
     /\.(?:eot|ttf|woff|woff2)$/,
@@ -119,24 +105,6 @@ workbox.routing.registerRoute(
             new workbox.cacheableResponse.Plugin({
                 statuses: [0, 200]
             })
-        ]
-    })
-);
-
-// External Videos
-workbox.routing.registerRoute(
-    /^https:\/\/raw\.githubusercontent\.com\/reuixiy\/hugo-theme-meme\/.*/,
-    new workbox.strategies.CacheFirst({
-        cacheName: "external-videos",
-        plugins: [
-            new workbox.expiration.Plugin({
-                maxEntries: 1000,
-                maxAgeSeconds: 60 * 60 * 24 * 30
-            }),
-            new workbox.cacheableResponse.Plugin({
-                statuses: [200]
-            }),
-            new workbox.rangeRequests.Plugin()
         ]
     })
 );
