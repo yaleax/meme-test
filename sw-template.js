@@ -19,7 +19,7 @@ workbox.precaching.precacheAndRoute([]);
 workbox.precaching.cleanupOutdatedCaches();
 
 workbox.routing.registerRoute(
-    /.*\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/,
+    /\.(?:png|jpg|jpeg|gif|bmp|webp|svg|ico)$/,
     new workbox.strategies.CacheFirst({
         cacheName: "images",
         plugins: [
