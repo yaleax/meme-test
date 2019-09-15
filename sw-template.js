@@ -94,7 +94,7 @@ workbox.routing.registerRoute(
 
 // External Images
 workbox.routing.registerRoute(
-    /^https:\/\/raw\.githubusercontent\.com\/reuixiy\/hugo-theme-meme\/.*/,
+    /^https:\/\/raw\.githubusercontent\.com\/reuixiy\/hugo-theme-meme\/master\/static\/icons\/.*/,
     new workbox.strategies.CacheFirst({
         cacheName: "external-images",
         plugins: [
