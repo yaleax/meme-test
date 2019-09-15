@@ -23,7 +23,7 @@ gulp.task('generate-service-worker', () => {
             "**/*.{html,css,js,json,woff2}"
         ],
         modifyURLPrefix: {
-            "": "/"
+            "": "./"
         }
     });
 });
