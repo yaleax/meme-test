@@ -9,6 +9,8 @@ copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0
 defaultContentLanguage = "en-us"
 defaultContentLanguageInSubdir = false
 
+# relativeURLs = true
+
 enableGitInfo = true
 
 pluralizeListTitles = false
@@ -741,6 +743,9 @@ enableLangToggle = true
 # Display LangToggle only when content is translated
 autoHideLangToggle = true
 hideLangToggleInHome = false
+
+# Style & Script
+enableFingerprint = false
 
 # 404
 fofPoster = "/images/flying-clouds-720p.jpg"
