@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "git config --global core.quotePath false && ./node_modules/gulp/bin/gulp.js build"
+    "build": "git config --global core.quotePath false && hugo --gc --minify --cleanDestinationDir && ./node_modules/gulp/bin/gulp.js build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/reuixiy/meme-test.git"
   },
-  "keywords": ["hugo", "hugo-theme", "hugo-theme-meme"],
+  "keywords": [
+    "hugo",
+    "hugo-theme",
+    "hugo-theme-meme"
+  ],
   "author": "reuixiy",
   "license": "MIT",
   "bugs": {
@@ -20,8 +24,6 @@
   "homepage": "https://github.com/reuixiy/meme-test#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
-    "gulp-shell": "^0.7.1",
     "gulp-uglify": "^3.0.2",
     "readable-stream": "^3.4.0",
     "uglify-es": "^3.3.9",
