@@ -136,7 +136,7 @@ weight = 2
 pre = "external"
 identifier = "twitter"
 [[languages.zh-cn.menu.socials]]
-url = "https://music.163.com/user/home?id=86590096"
+url = "https://music.163.com/"
 name = "Music"
 weight = 3
 pre = "external"
@@ -353,7 +353,7 @@ pre = "external"
 identifier = "twitter"
 
 [[menu.socials]]
-url = "https://music.163.com/user/home?id=86590096"
+url = "https://www.spotify.com/"
 name = "Music"
 weight = 3
 pre = "external"
